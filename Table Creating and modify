@@ -1,0 +1,35 @@
+
+CREATE TABLE student(
+student_id INT,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+depertment_name VARCHAR(20),
+dateof_issue DATE,
+dateof_expaire DATE
+);
+(see column)
+SELECT * FROM student;
+
+(change table name)
+RENAME TABLE satro TO student;
+
+(delete table)
+DROP TABLE student;
+
+(adding column)
+ALTER TABLE student
+ADD phone_number VARCHAR(15);
+
+(column name change)
+ALTER TABLE student
+RENAME COLUMN phone_number TO email;
+
+(location change)
+ALTER TABLE student
+MODIFY email VARCHAR(30)
+AFTER last_name;
+
+(at first )
+ALTER TABLE student
+MODIFY email VARCHAR(30) 
+FIRST
