@@ -1,0 +1,26 @@
+CREATE TABLE info(
+id INT,
+first_name VARCHAR(30),
+last_name VARCHAR(30),
+uni_name VARCHAR(30),
+depertment VARCHAR(10),
+issu_date DATE,
+expire_date DATE
+);
+
+
+
+INSERT INTO info
+VALUES (01,"Imran","Hasan","Prime University","CSE","2023-01-01","2027-01-01");// date start from year then month then day
+       (02,"Tonmoy","Sarker","Prime University","CSE","2023-01-01","2027-01-01"),
+       (03,"Sabrina","Mumu","Prime University","CSE","2023-01-01","2027-01-01"),
+       (04,"Shawon","Mridha","Prime University","CSE","2023-01-01","2027-01-01"),
+       (05,"Orko","Ryhan","Prime University","CSE","2023-01-01","2027-01-01"),
+       (06,"Ruhul","Fahad","Prime University","CSE","2023-01-01","2027-01-01"),
+       (07,"Mahmudul","Hasan","Prime University","CSE","2023-01-01","2027-01-01"),
+       (08,"Hamim","Reza","Prime University","CSE","2023-01-01","2027-01-01"),
+       (09,"Rashed","Hossien","Prime University","CSE","2023-01-01","2027-01-01"),
+       (10,"Sumona","Ayat","Prime University","CSE","2023-01-01","2027-01-01");
+       
+INSERT INTO info (id,first_name,last_name,uni_name)
+VALUES (11,"Lia","Aktar","Prime University");
