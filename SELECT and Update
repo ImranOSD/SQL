@@ -13,27 +13,27 @@ VALUES(01,"Imran","Hasan","Mirpur -10",75000.00),
 (04,"Mahbub","Khan","Tikatoli",100000.00),
 (05,"Ramim","Hasan","Mirpur-2",150000.00);
 
-SELECT first_name,last_name,salary FROM iht;
+SELECT first_name,last_name,salary FROM iht;  //show full name
 
 SELECT *
-FROM iht
+FROM iht         // id = 1 single data
 WHERE id = 1;
 
 SELECT *
-FROM iht
+FROM iht        // name's all data
 WHERE first_name  = "Ramim";
 
 
 SELECT *
-FROM iht
+FROM iht           // number based details
 WHERE salary = 75000.00; 
 
 SELECT first_name,address
-FROM iht
+FROM iht                // address base 
 WHERE address = "Dhanmondi";
 
 SELECT * 
-FROM iht
+FROM iht        // number 2 id  
 WHERE id = 2;
 
 UPDATE employees
