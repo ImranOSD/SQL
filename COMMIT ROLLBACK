@@ -1,0 +1,14 @@
+INSERT INTO class
+VALUES(001,"Pather Panchali","Bibhutibhushan B",700.00,1929),
+      (002,"Gitanjali","Rabindranath Tagore",550.00,1910),
+      (003,"Srikanta"," Sarat Chandra C",440.00,1917),
+      (004,"Chokher Bali","Sarat Chandra C",600.00,1903);
+      
+      
+     ALTER TABLE class
+RENAME COLUMN writter_name TO writer_name;
+
+SET AUTOCOMMIT = OFF;
+COMMIT;
+ROLLBACK;
+        //AUTOCOMMIT OFF allows manual control over transactions using COMMIT to save and ROLLBACK to undo changes.
