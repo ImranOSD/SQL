@@ -1,0 +1,20 @@
+
+
+CREATE TABLE imran(
+today_date DATE,
+today_time TIME,
+today_datetime DATETIME
+);
+
+SELECT * FROM imran;
+
+INSERT INTO imran
+VALUES(CURRENT_DATE(),CURRENT_TIME(),NOW());
+
+INSERT INTO imran
+VALUES(CURRENT_DATE()+1,CURRENT_TIME()+1,NOW());
+
+INSERT INTO imran
+VALUES(CURRENT_DATE() - 1, CURRENT_TIME()-1,NULL);
+
+SELECT * FROM imran;
