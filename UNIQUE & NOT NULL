@@ -1,0 +1,47 @@
+
+CREATE TABLE product(
+phone_id INT,
+phone_name VARCHAR(30),
+imei_number INT UNIQUE,
+price DECIMAL
+);
+
+INSERT INTO product
+VALUES(1023,"IQOO 15",887788,80000.00),
+      (3211,"RED MAGIC 11",554433,102300.00),
+      (4433,"SAMSUNG G S25",332211,150000.00),
+      (4355,"IPHONE 17 PRO MAX",665544,175000.00) ;
+      
+      
+      //unique use for not duplicate a name ,number, code etc...
+      
+   //if i not use use unique in table making time then i use this code 
+   for additionally making it
+      
+      
+      ALTER TABLE products
+ADD CONSTRAINT 
+UNIQUE (product_name);
+
+
+
+
+
+CREATE TABLE alam(
+phone_id INT,
+phone_name VARCHAR(30),
+price DECIMAL (10,2) NOT NULL
+);
+
+INSERT INTO alam
+VALUES(10203,"iqoo z10x",25000.00),
+(2122,"iqoo z9x",20000.00),
+(3232,"iqoo z9s",30000.00);
+
+INSERT INTO alam
+VALUES(2121,"iqoo z11", NULL);
+
+
+// i use NOT NULL so that when i enter data 
+   there is not any null value..
+      
