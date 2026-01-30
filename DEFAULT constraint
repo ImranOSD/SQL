@@ -1,0 +1,20 @@
+
+CREATE TABLE sells(
+product_id INT,
+product_name VARCHAR(30),
+product_price DECIMAL(10,2),
+sell_time DATETIME DEFAULT NOW() 
+);
+ // when i miss to enter a column value then i use DEAFULT
+   it automaticly add a fixt value..if i use decimal then just 
+    use decimal values in close of DEFAULT.
+
+ALTER TABLE products 
+ALTER price SET DEFAULT 0; //additional
+
+
+INSERT INTO sells(product_id,product_name,product_price)
+VALUES(01,"Keyboard",750.00),
+       (02,"Mouse",350.00),
+       (03,"Speaker",500.00) ;
+       
