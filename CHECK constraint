@@ -1,0 +1,23 @@
+
+CREATE TABLE employee(
+employee_id INT,
+first_name VARCHAR(20),
+last_name VARCHAR(20),
+monthly_pay DECIMAL (10,2),
+CONSTRAINT chk_monthly_pay CHECK (monthly_pay >= 15000.00)  // method 
+);
+
+INSERT INTO employee
+VALUES(01,"Imran","Hasan",150000.00),
+(02,"Rakib","ali",76000.00),
+(03,"Alhaz","uddin",20000.00); // if i set less then 15000 then 
+                                  it cannot response..
+                                  
+SET SQL_SAFE_UPDATES = 0; // for update
+
+UPDATE employee
+SET first_name = 'Akash'
+WHERE employee_id = 6;
+
+      INSERT INTO employee
+VALUES(07,"Jannatul","Ariba",14999.00); // here value is less then 15000.so it cannot accpt.
