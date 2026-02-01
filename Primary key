@@ -1,0 +1,28 @@
+CREATE TABLE base( 
+transaction_id INT PRIMARY KEY,
+owner_name VARCHAR(50),
+amount DECIMAL(10,2)
+);
+
+
+{
+
+INSERT INTO base
+VALUES(0012,"Imran T ",30000.00),
+       (0012,"Rahat K",35000.00),
+       (0934,"Rimal R",45000.00) 
+       (0033,"Muslim U",50000.00);
+       
+       }// here i save transaction is with primary key so it cannot accpt same or duplicate value..
+       
+       
+       INSERT INTO base
+VALUES(0012,"Imran T ",30000.00),
+       (0015,"Rahat K",35000.00),
+       (0934,"Rimal R",45000.00), 
+       (0033,"Muslim U",50000.00);
+       
+     ALTER TABLE iot
+ADD CONSTRAINT
+PRIMARY KEY(transation_id);  
+       
