@@ -1,0 +1,17 @@
+CREATE TABLE taka(
+account_no INT PRIMARY KEY AUTO_INCREMENT,
+owner_name VARCHAR(20),
+amount DECIMAL(10,2) 
+);
+
+INSERT INTO taka(owner_name, amount)
+VALUES("Imran",60000.00), 
+       ("Habib",69000.00),
+       ("Xaviar",50000.00);
+ 
+ALTER TABLE taka
+AUTO_INCREMENT  = 2710
+
+INSERT INTO taka(owner_name,amount)
+VALUES("koko",43333.00);
+SELECT * FROM taka;
