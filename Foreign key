@@ -1,25 +1,30 @@
-//not complite
 
-CREATE TABLE ami(
-zip_code INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE sell(
+customer_id INT PRIMARY KEY AUTO_INCREMENT,
 first_name VARCHAR(30),
-last_name VARCHAR(30)
+last_name VARCHAR(30) 
 );
 
-ALTER TABLE ami
-AUTO_INCREMENT = 2300;
+INSERT INTO sell(first_name,last_name)
+VALUES("Imran","Nazir"),
+      ("Kamal","Hassan"),
+      ("Alif","Afif"),
+      ("Natasa","Nice")
+      ;
+CREATE TABLE transactions(
+transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+amount DECIMAL(10,2),
+customer_id INT,
+FOREIGN KEY (customer_id) REFERENCES sell(customer_id) 
+); 
 
-INSERT INTO ami(first_name,last_name)
-VALUES("Imran","Hasan"),
-      ("Sagor","Ali"),
-      ("Akash","Sarkar"),
-      ("Tuba","Khan");
-      
-      CREATE TABLE imo(
-ticket_no INT PRIMARY KEY AUTO_INCREMENT,
-area_name VARCHAR(30),
-zip_code INT,
+SELECT *  FROM sell;
 
-FOREIGN KEY(zip_code) REFERENCES ami(zip_code)
+ALTER TABLE transactions
+AUTO_INCREMENT = 5000;
 
-)
+INSERT INTO transactions(amount,customer_id)
+VALUES(500.00,1),
+       (1000.00,2),
+       (5000.00,3),
+       (6000.00,4);
