@@ -1,0 +1,25 @@
+//not complite
+
+CREATE TABLE ami(
+zip_code INT PRIMARY KEY AUTO_INCREMENT,
+first_name VARCHAR(30),
+last_name VARCHAR(30)
+);
+
+ALTER TABLE ami
+AUTO_INCREMENT = 2300;
+
+INSERT INTO ami(first_name,last_name)
+VALUES("Imran","Hasan"),
+      ("Sagor","Ali"),
+      ("Akash","Sarkar"),
+      ("Tuba","Khan");
+      
+      CREATE TABLE imo(
+ticket_no INT PRIMARY KEY AUTO_INCREMENT,
+area_name VARCHAR(30),
+zip_code INT,
+
+FOREIGN KEY(zip_code) REFERENCES ami(zip_code)
+
+)
