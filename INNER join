@@ -11,7 +11,7 @@ SELECT * FROM iqoo;
 INSERT INTO iqoo(product_name,product_model)
 VALUES("Vivo Iqoo","15 series"),
        ("Vivo Iqoo","Neo 11"),
-       ("Vivo Iqoo","Z10"),
+       ("Vivo Iqoo","Z10 turbo"),
        ("Vivo Iqoo","13 series"),
        ("Vivo Iqoo","Z10x");
        
