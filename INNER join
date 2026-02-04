@@ -1,0 +1,52 @@
+      CREATE TABLE iqoo(
+product_id INT PRIMARY KEY AUTO_INCREMENT,
+product_name VARCHAR(20),
+product_model VARCHAR(20)
+);
+
+ALTER TABLE iqoo
+AUTO_INCREMENT = 32010;
+SELECT * FROM iqoo;
+
+INSERT INTO iqoo(product_name,product_model)
+VALUES("Vivo Iqoo","15 series"),
+       ("Vivo Iqoo","Neo 11"),
+       ("Vivo Iqoo","Z10"),
+       ("Vivo Iqoo","13 series"),
+       ("Vivo Iqoo","Z10x");
+       
+       SELECT * FROM iqoo;
+       
+       
+         CREATE TABLE buyer(
+customer_id INT PRIMARY KEY AUTO_INCREMENT,
+customer_name VARCHAR(23),
+product_price DECIMAL(10,2),
+product_id INT,
+
+FOREIGN KEY (product_id) REFERENCES iqoo(product_id)
+);
+
+INSERT INTO buyer(customer_name,product_price)
+VALUES("Imran",86999.00),
+      ("Rahat",56999.00),
+      ("Amin",31000.00),
+      ("Alim",65000.00),
+      ("Jarif",25000.00);
+      
+      SELECT * FROM buyer;
+      
+SELECT *
+FROM buyer
+INNER JOIN iqoo
+ON buyer.product_id = iqoo.product_id;
+
+
+SELECT*FROM buyer;
+SELECT *
+FROM transactions LEFT JOIN customers
+ON transactions.customer_id = customers.customer_id;
+
+SELECT *
+FROM transactions RIGHT JOIN customers
+ON transactions.customer_id = customers.customer_id;
