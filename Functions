@@ -1,0 +1,48 @@
+
+CREATE TABLE phone(
+imei_id INT PRIMARY KEY AUTO_INCREMENT,
+first_name VARCHAR(30),
+last_name VARCHAR(30),
+phone_name VARCHAR(20),
+phone_price DECIMAL(10,2)
+);
+
+
+
+ALTER TABLE phone
+AUTO_INCREMENT = 1002010;
+
+
+
+
+INSERT INTO phone (first_name,last_name,phone_name,phone_price)
+
+VALUES("Imran ","Hasan","iqoo 15 ultra",85000.00),
+      ("Ramim","Sarkar","I phone 15",105000.00),
+      ("Rimel","Rahman","Iqoo z9s",32000.00),
+      ("Fahim","Hasan","Huawai Nova 11",30000.00),
+      ("Santo","Hassan","Oppo f15",25000.00),
+      ("Sumona","Ayat","Honor 13",40000.00);
+
+
+SELECT * FROM phone;
+
+
+SELECT COUNT(phone_price) as count
+FROM phone;
+
+SELECT MAX(phone_price) AS maximum
+FROM phone;
+
+SELECT MIN(phone_price) AS minimum
+FROM phone;
+
+
+SELECT AVG(phone_price) AS average
+FROM phone;
+
+SELECT SUM(phone_price) AS sum
+FROM phone;
+
+SELECT CONCAT(first_name," ",last_name) AS full_name
+FROM phone;
